@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+
 
 function App() {
+  const HandleLogin=event=>{
+    event.preventDefault()
+const email = event.target.email.value
+const password = event.target.password.value
+console.log(email,password)
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <form onSubmit={HandleLogin}>
+    <input type="email" name="email" placeholder="Enter email"/>
+    <input type="password" name="password" placeholder="Enter password" />
+    <input type="submit" value="Login" />
+    </form>
   );
 }
 
