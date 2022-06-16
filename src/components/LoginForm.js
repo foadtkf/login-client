@@ -34,7 +34,7 @@ const LoginForm = () => {
           <strong>Welcome Back</strong>
         </h2>
         <p className="text-center subtitle">
-          <sub>Sub-title text goes here</sub>
+          <sub style={{color:'#023047'}}>Sub-title text goes here</sub>
         </p>
         <Form.Group className="mb-3" controlId="formBasicEmail">
           <Form.Control
@@ -55,9 +55,9 @@ const LoginForm = () => {
         <div className="d-flex justify-content-between">
         <div>
         <sub><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"/>
-  <label htmlFor="vehicle3"> Remember password</label></sub>
+  <label htmlFor="vehicle3" style={{color:'#023047'}}> Remember password</label></sub>
   </div>
-  <sub><p  className="text-end mt-3 mt-md-2"><a href=".." style={{textDecoration:'none'}} > Forgot password?</a></p ></sub>
+  <sub><p  className="text-end mt-3 mt-md-2"><a href=".." style={{textDecoration:'none',color:'#023047'}} > Forgot password?</a></p ></sub>
   </div>
       </Form>
       <img className="d-none d-md-block d-lg-block " src="https://cdn.dribbble.com/users/6024852/screenshots/15534392/media/aba2b04e24a7993ef3bfd5a3a048b6c4.jpg?compress=1&resize=768x576&vertical=top" alt="" />
